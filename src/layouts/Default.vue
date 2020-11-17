@@ -1,12 +1,8 @@
 <template>
   <div>
-    <header>
-      <nav class="bg-gradient-to-r from-teal-300 to-blue-600 py-4">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-        <g-link class="nav__link" to="/hollywood/">Hollywood</g-link>
-      </nav>
-    </header>
+    <MenuMobile v-if="isDesktop < 1024" />
+    <MenuDesktop v-else-if="isDesktop > 1024" />
+
     <slot />
     <footer class="bg-gray-400 absolute bottom-0 w-full flex justify-center">
       Footer
@@ -21,6 +17,22 @@ query {
   }
 }
 </static-query>
+
+<script>
+import MenuMobile from "../components/MenuMobile";
+import MenuDesktop from "../components/MenuDesktop";
+export default {
+  components: {
+    MenuMobile,
+    MenuDesktop,
+  },
+  data() {
+    return {
+      isDesktop: window.innerWidth,
+    };
+  },
+};
+</script>
 
 <style>
 body {
