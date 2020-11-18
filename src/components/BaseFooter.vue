@@ -1,7 +1,7 @@
 <template>
   <footer
-    class="bg-gray-500 absolute bottom-0 w-full flex justify-center items-center h-24
-    lg:h-16
+    class="bg-gray-500 w-full absolute bottom-0 flex justify-center items-center h-24
+    lg:h-15
     "
   >
     <div class="flex py-4 w-full justify-evenly mb-3 lg:mb-0 lg:justify-center">
