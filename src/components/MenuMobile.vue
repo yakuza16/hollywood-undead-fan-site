@@ -4,16 +4,20 @@
       <button
         v-show="!isMenuOpen"
         @click="isMenuOpen = true"
-        class="menu bg-cover w-12 h-12 mr-4 mt-4"
-      ></button>
+        class="w-12 h-12 mr-4 mt-4"
+      >
+        <g-image src="../../static/assets/menu.svg" />
+      </button>
     </div>
     <transition name="fade">
       <div v-show="isMenuOpen" class="absolute top-0 left-0 w-full">
         <NavigationMenu />
         <button
           @click="isMenuOpen = false"
-          class="close bg-cover w-12 h-12 m-4 absolute bottom-0 right-0"
-        ></button>
+          class="w-12 h-12 m-4 absolute top-0 right-0"
+        >
+          <g-image src="../../static/assets/cancel.svg" />
+        </button>
       </div>
     </transition>
   </header>
@@ -34,14 +38,6 @@ export default {
 </script>
 
 <style>
-.menu {
-  background-image: url("../../static/assets/menu.svg");
-}
-
-.close {
-  background-image: url("../../static/assets/cancel.svg");
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s;

@@ -6,7 +6,7 @@
     <div class="flex py-4 w-full justify-evenly lg:mb-0 lg:justify-center">
       <div class="lg:mx-10">
         <a href="https://www.facebook.com/hollywoodundead"
-          ><img
+          ><g-image
             class="w-10 h-10"
             src="../../static/assets/facebook.svg"
             alt="facebook"
@@ -15,7 +15,7 @@
 
       <div class="lg:mx-10">
         <a href="https://www.instagram.com/hollywoodundead"
-          ><img
+          ><g-image
             class="w-10 h-10"
             src="../../static/assets/instagram.svg"
             alt="instagram"
@@ -24,7 +24,7 @@
 
       <div class="lg:mx-10">
         <a href="https://open.spotify.com/artist/0CEFCo8288kQU7mJi25s6E"
-          ><img
+          ><g-image
             class="w-10 h-10"
             src="../../static/assets/spotify.svg"
             alt="spotify"
@@ -33,7 +33,7 @@
 
       <div class="lg:mx-10">
         <a href="https://www.youtube.com/user/HUofficial"
-          ><img
+          ><g-image
             class="w-10 h-10"
             src="../../static/assets/youtube.svg"
             alt="youtube"
