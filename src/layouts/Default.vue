@@ -1,5 +1,7 @@
 <template>
-  <div class="wrapper">
+  <div
+    class="wrapper bg-yellow-200 bg-opacity-75 min-h-screen bg-center bg-no-repeat bg-cover"
+  >
     <div>
       <MenuMobile v-if="isDesktop < 1024" />
       <MenuDesktop v-else />
@@ -47,11 +49,15 @@ export default {
 <style>
 body {
   position: relative;
-  min-height: 100vh;
   overflow-x: hidden;
-  background-image: url("https://cdn.pixabay.com/photo/2017/04/05/01/16/tropical-2203737_960_720.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+}
+
+.wrapper {
+  /* background-image: url("../../static/assets/main-background.jpg"); */
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    /* background-image: url("../../static/assets/desktop-background.jpg"); */
+  }
 }
 </style>

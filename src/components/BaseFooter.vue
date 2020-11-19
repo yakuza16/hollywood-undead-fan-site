@@ -1,10 +1,9 @@
 <template>
   <footer
-    class="bg-gray-500 w-full absolute bottom-0 flex justify-center items-center h-24
-    lg:h-15
+    class="bg-gray-500 w-full absolute bottom-0 flex justify-center items-center h-auto
     "
   >
-    <div class="flex py-4 w-full justify-evenly mb-3 lg:mb-0 lg:justify-center">
+    <div class="flex py-4 w-full justify-evenly lg:mb-0 lg:justify-center">
       <div class="lg:mx-10">
         <a href="https://www.facebook.com/hollywoodundead"
           ><img
