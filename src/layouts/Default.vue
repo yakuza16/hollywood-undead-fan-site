@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="wrapper bg-blue-200 bg-opacity-75 min-h-screen bg-center bg-no-repeat bg-cover"
-  >
+  <div class="bg-blue-200 min-h-screen bg-center bg-no-repeat bg-cover">
     <div>
       <MenuMobile v-if="isDesktop < 1024" />
       <MenuDesktop v-else />
@@ -50,14 +48,5 @@ export default {
 body {
   position: relative;
   overflow-x: hidden;
-}
-
-.wrapper {
-  /* background-image: url("../../static/assets/main-background.jpg"); */
-}
-@media (min-width: 1024px) {
-  .wrapper {
-    /* background-image: url("../../static/assets/desktop-background.jpg"); */
-  }
 }
 </style>
