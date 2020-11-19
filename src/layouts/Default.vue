@@ -1,6 +1,6 @@
 <template>
   <div
-    class="wrapper bg-yellow-200 bg-opacity-75 min-h-screen bg-center bg-no-repeat bg-cover"
+    class="wrapper bg-blue-200 bg-opacity-75 min-h-screen bg-center bg-no-repeat bg-cover"
   >
     <div>
       <MenuMobile v-if="isDesktop < 1024" />
