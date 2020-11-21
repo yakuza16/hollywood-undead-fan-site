@@ -1,16 +1,18 @@
 <template>
   <Layout>
     <div class="flex flex-col justify-center place-items-center mx-4 mt-4">
-      <section class="flex justify-center flex-wrap w-full">
+      <section
+        class="flex justify-center flex-wrap w-full lg:flex-col lg:place-content-center"
+      >
         <g-image
-          alt="Example image"
+          alt="Hollywood Undead"
           src="../../static/assets/hollywood-undead-sign.png"
-          class="m-16 px-8 w-full opacity-90 hover:opacity-50 lg:w-2/3"
+          class="m-16 px-8 w-full opacity-90 hover:opacity-50 lg:w-1/3"
         />
         <g-image
-          alt="Example image"
+          alt="Dove and grenade"
           src="../../static/assets/dove-and-grenade.png"
-          class="mx-16 w-full opacity-90 h-auto  hover:opacity-50 lg:w-1/4"
+          class="mx-16 w-full opacity-90 h-auto  hover:opacity-50 lg:w-1/6 lg:m-auto"
         />
       </section>
       <article class="flex justify-center text-center mx-5 lg:w-3/4 mb-4">

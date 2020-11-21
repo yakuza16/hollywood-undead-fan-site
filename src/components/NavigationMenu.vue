@@ -5,10 +5,10 @@
     <ul class="flex flex-col text-letf ml-4 lg:flex-row">
       <li class="my-4 mx-4 "><g-link class="nav__link" to="/">Home</g-link></li>
       <li class="my-4 mx-4">
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/members/">Members</g-link>
       </li>
       <li class="my-4 mx-4">
-        <g-link class="nav__link" to="/hollywood/">Hollywood</g-link>
+        <g-link class="nav__link" to="/albums/">Albums</g-link>
       </li>
     </ul>
   </nav>
