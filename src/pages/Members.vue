@@ -50,34 +50,40 @@ export default {
           pseudonim: "Johnny 3 Tears",
           maskImage: "JohhnyMask.jpg",
           realName: "George Arthur Ragan",
-          age: new Date().getFullYear() - 1981,
+          age: this.calculateAge(1981),
         },
         {
           pseudonim: "Charlie Scene",
           maskImage: "charlieMask.jpg",
           realName: "Jordon Kristopher Terrell",
-          age: new Date().getFullYear() - 1985,
+          age: this.calculateAge(1985),
         },
         {
           pseudonim: "J-Dog",
           maskImage: "JdogMask.jpg",
           realName: "Jorel Decker",
-          age: new Date().getFullYear() - 1984,
+          age: this.calculateAge(1984),
         },
         {
           pseudonim: "Funny Man",
           maskImage: "funnyMask.jpg",
           realName: "Dylan Alvarez",
-          age: new Date().getFullYear() - 1986,
+          age: this.calculateAge(1986),
         },
         {
           pseudonim: "Danny",
           maskImage: "DannyMask.jpg",
           realName: "Daniel Rose Murillo",
-          age: new Date().getFullYear() - 1982,
+          age: this.calculateAge(1982),
         },
       ],
     };
+  },
+  methods: {
+    calculateAge: (birthYear) => {
+      const age = new Date().getFullYear() - birthYear;
+      return age;
+    },
   },
 };
 </script>
