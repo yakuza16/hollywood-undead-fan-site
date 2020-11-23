@@ -12,26 +12,28 @@
             <li
               v-for="album in albums"
               :key="album.number"
-              class="my-5 border-b-4 py-3 hover:border-gray-900 border-opacity-50
+              class="my-5 border-b-4 py-3
+              transition duration-500 ease-in-out hover:border-gray-900 border-opacity-50
               lg:hover:bg-blue-300 "
             >
-              <p class="my-3">
+              <p class="my-2">
                 Title: <strong>{{ album.title }}</strong>
               </p>
-              <p class="my-3">Number: {{ album.number }}</p>
-              <div class="flex justify-center my-5">
+              <p class="my-2">Number: {{ album.number }}</p>
+              <div class="flex justify-center my-2">
                 <g-image
                   :src="album.coverURL"
                   :alt="`${album.title} cover`"
-                  class="my-4 rounded-full border-gray-900 border-4 border-opacity-75"
+                  class="my-2 p-4"
                 />
               </div>
               <div>
                 <button
                   @click="showTracks"
-                  class="px-4 py-2 mb-5 rounded-lg border border-gray-900 text-xl transition-colors bg-gradient-to-r from-blue-400 to-blue-700 hover:to-green-200 focus:to-green-400 "
+                  class="px-4 py-2 w-1/2 mb-5 rounded-lg border border-gray-900 text-xl transition duration-500 ease-in-out hover:bg-blue-600 hover:text-white hover:border-white focus:bg-blue-600 focus:text-white focus:border-white lg:w-1/4"
                 >
-                  Show tracks
+                  <span v-if="!isTrackListVisible">Show tracks</span>
+                  <span v-else>Hide tracks</span>
                 </button>
                 <ul v-if="isTrackListVisible">
                   <li v-for="track in album.tracks" :key="track.track_number">

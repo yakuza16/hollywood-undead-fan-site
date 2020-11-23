@@ -12,7 +12,8 @@
             <li
               v-for="member in bandMembers"
               :key="member.pseudonim"
-              class="my-5 border-b-4 py-3 hover:border-gray-900 border-opacity-50
+              class="my-5 border-b-4 py-3
+                transition duration-500 ease-in-out hover:border-gray-900 border-opacity-50
               lg:hover:bg-blue-300 "
             >
               <p class="my-3">
