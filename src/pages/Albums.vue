@@ -29,15 +29,15 @@
               </div>
               <div>
                 <button
-                  @click="showTracks"
+                  @click="showTracks(album.number)"
                   class="px-4 py-2 w-1/2 mb-5 rounded-lg border border-gray-900 text-xl transition duration-500 ease-in-out hover:bg-blue-600 hover:text-white hover:border-white focus:bg-blue-600 focus:text-white focus:border-white lg:w-1/4"
                 >
                   <span v-if="!isTrackListVisible">Show tracks</span>
                   <span v-else>Hide tracks</span>
                 </button>
-                <ul v-if="isTrackListVisible">
+                <ul>
                   <li v-for="track in album.tracks" :key="track.track_number">
-                    <div>
+                    <div v-show="album.isTrackListVisible">
                       <p>{{ track.track_number }}. {{ track.name }}</p>
                     </div>
                   </li>
@@ -58,6 +58,7 @@ export default {
       isTrackListVisible: false,
       albums: [
         {
+          isTrackListVisible: false,
           number: 1,
           title: "Swan Songs",
           releaseDate: "September 2, 2008",
@@ -131,6 +132,7 @@ export default {
           ],
         },
         {
+          isTrackListVisible: false,
           number: 2,
           title: "American Tragedy",
           releaseDate: "April 5, 2011",
@@ -196,6 +198,7 @@ export default {
           ],
         },
         {
+          isTrackListVisible: false,
           number: 3,
           title: "Notes from the Underground",
           releaseDate: "January 8, 2013",
@@ -249,6 +252,7 @@ export default {
           ],
         },
         {
+          isTrackListVisible: false,
           number: 4,
           title: "Day of the Dead",
           releaseDate: "March 31, 2015",
@@ -306,6 +310,7 @@ export default {
           ],
         },
         {
+          isTrackListVisible: false,
           number: 5,
           title: "Five",
           releaseDate: "July 24, 2017",
@@ -371,6 +376,8 @@ export default {
           ],
         },
         {
+          isTrackListVisible: false,
+          isTrackListVisible: false,
           number: 6,
           title: "New Empire, Vol. 1",
           releaseDate: "February 14, 2020",
@@ -419,8 +426,22 @@ export default {
     };
   },
   methods: {
-    showTracks() {
-      return (this.isTrackListVisible = !this.isTrackListVisible);
+    showTracks(id) {
+      if (this.isTrackListVisible) {
+        this.albums.filter((item) => {
+          if (item.number === id) {
+            item.isTrackListVisible = false;
+          }
+        });
+        this.isTrackListVisible = !this.isTrackListVisible;
+      } else if (!this.isTrackListVisible) {
+        this.albums.filter((item) => {
+          if (item.number === id) {
+            item.isTrackListVisible = true;
+          }
+        });
+        this.isTrackListVisible = !this.isTrackListVisible;
+      }
     },
   },
 };
