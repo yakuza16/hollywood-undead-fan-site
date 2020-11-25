@@ -10,6 +10,9 @@
       <li class="my-4 mx-4">
         <g-link class="nav__link" to="/albums/">Albums</g-link>
       </li>
+      <li class="my-4 mx-4">
+        <g-link class="nav__link" to="/videos/">Videos</g-link>
+      </li>
     </ul>
   </nav>
 </template>

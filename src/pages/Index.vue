@@ -53,7 +53,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Hollywood Undead Polska",
+    title: "Hollywood Undead Fan Site",
   },
 };
 </script>
