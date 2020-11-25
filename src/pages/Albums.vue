@@ -32,7 +32,7 @@
                   @click="showTracks(album.number)"
                   class="px-4 py-2 w-1/2 mb-5 rounded-lg border border-gray-900 text-xl transition duration-500 ease-in-out hover:bg-blue-600 hover:text-white hover:border-white focus:bg-blue-600 focus:text-white focus:border-white lg:w-1/4"
                 >
-                  <span v-if="!isTrackListVisible">Show tracks</span>
+                  <span v-if="!album.isTrackListVisible">Show tracks</span>
                   <span v-else>Hide tracks</span>
                 </button>
                 <ul>
@@ -55,7 +55,6 @@
 export default {
   data() {
     return {
-      isTrackListVisible: false,
       albums: [
         {
           isTrackListVisible: false,
@@ -427,21 +426,13 @@ export default {
   },
   methods: {
     showTracks(id) {
-      if (this.isTrackListVisible) {
-        this.albums.filter((item) => {
-          if (item.number === id) {
-            item.isTrackListVisible = false;
-          }
-        });
-        this.isTrackListVisible = !this.isTrackListVisible;
-      } else if (!this.isTrackListVisible) {
-        this.albums.filter((item) => {
-          if (item.number === id) {
-            item.isTrackListVisible = true;
-          }
-        });
-        this.isTrackListVisible = !this.isTrackListVisible;
-      }
+      this.albums.filter((item) =>
+        item.number === id && item.isTrackListVisible === false
+          ? (item.isTrackListVisible = true)
+          : item.number === id && item.isTrackListVisible === true
+          ? (item.isTrackListVisible = false)
+          : null
+      );
     },
   },
 };
