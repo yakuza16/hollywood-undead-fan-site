@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <div class="flex flex-col justify-center place-items-center mx-4 mt-4">
+      <ImagesCarousel />
       <section
         class=" mt-5 mb-32 flex flex-col justify-items-center place-content-center text-center"
       >
@@ -40,7 +41,11 @@
 </template>
 
 <script>
+import ImagesCarousel from "../components/ImagesCarousel";
 export default {
+  components: {
+    ImagesCarousel,
+  },
   metaInfo: {
     title: "Hollywood Undead Band Members",
   },
