@@ -4,47 +4,50 @@
     "
   >
     <div class="flex py-4 w-full justify-evenly lg:mb-0 lg:justify-center">
-      <div class="lg:mx-10">
-        <a href="https://www.facebook.com/hollywoodundead"
-          ><g-image
+      <div v-for="social in socialMedias" :key="social.name" class="lg:mx-10">
+        <a :href="social.link">
+          <g-image
+            :src="
+              require('!!assets-loader!~/assets/social_icons/' + social.icon)
+            "
+            :alt="social.name"
             class="w-10 h-10"
-            src="../../static/assets/facebook.svg"
-            alt="facebook"
-        /></a>
-      </div>
-
-      <div class="lg:mx-10">
-        <a href="https://www.instagram.com/hollywoodundead"
-          ><g-image
-            class="w-10 h-10"
-            src="../../static/assets/instagram.svg"
-            alt="instagram"
-        /></a>
-      </div>
-
-      <div class="lg:mx-10">
-        <a href="https://open.spotify.com/artist/0CEFCo8288kQU7mJi25s6E"
-          ><g-image
-            class="w-10 h-10"
-            src="../../static/assets/spotify.svg"
-            alt="spotify"
-        /></a>
-      </div>
-
-      <div class="lg:mx-10">
-        <a href="https://www.youtube.com/user/HUofficial"
-          ><g-image
-            class="w-10 h-10"
-            src="../../static/assets/youtube.svg"
-            alt="youtube"
-        /></a>
+          />
+        </a>
       </div>
     </div>
   </footer>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      socialMedias: [
+        {
+          name: "facebook",
+          link: "https://www.facebook.com/hollywoodundead",
+          icon: "facebook.svg",
+        },
+        {
+          name: "instagram",
+          link: "https://www.instagram.com/hollywoodundead",
+          icon: "instagram.svg",
+        },
+        {
+          name: "spotify",
+          link: "https://open.spotify.com/artist/0CEFCo8288kQU7mJi25s6E",
+          icon: "spotify.svg",
+        },
+        {
+          name: "youtube",
+          link: "https://www.youtube.com/user/HUofficial",
+          icon: "youtube.svg",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style></style>
