@@ -1,25 +1,32 @@
 <template>
   <div>
-    <carousel
-      :autoplay="true"
-      class="flex justify-items-center place-content-center"
-    >
-      <slide v-for="(image, index) in images" :key="index">
-        <g-image
-          :src="require('!!assets-loader!~/assets/members/' + image)"
-          alt="Image of the Hollywood Undead member"
-        />
-      </slide>
-    </carousel>
+    <ClientOnly>
+      <carousel
+        :autoplay="true"
+        class="flex justify-items-center place-content-center"
+      >
+        <slide v-for="(image, index) in images" :key="index">
+          <g-image
+            :src="require('!!assets-loader!~/assets/members/' + image)"
+            alt="Image of the Hollywood Undead member"
+          />
+        </slide>
+      </carousel>
+    </ClientOnly>
   </div>
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
 export default {
   components: {
-    Carousel,
-    Slide,
+    Carousel: () =>
+      import("vue-carousel")
+        .then((m) => m.Carousel)
+        .catch(),
+    Slide: () =>
+      import("vue-carousel")
+        .then((m) => m.Slide)
+        .catch(),
   },
   data() {
     return {
