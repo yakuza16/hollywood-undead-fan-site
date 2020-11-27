@@ -1,7 +1,5 @@
 <template>
-  <nav
-    class=" text-xl bg-gradient-to-r from-teal-300 to-blue-600 py-4 h-screen sm:h-full"
-  >
+  <nav class=" text-xl bg-gradient-to-r from-teal-300 to-blue-600 py-4">
     <ul class="flex flex-col text-letf ml-4 lg:flex-row">
       <li v-for="page in routesPages" :key="page.name" class="my-4 mx-4">
         <g-link :to="page.path" class="nav__link">{{ page.name }}</g-link>

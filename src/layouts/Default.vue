@@ -1,8 +1,8 @@
 <template>
   <div class="bg-blue-200 min-h-screen bg-center bg-no-repeat bg-cover">
     <div>
-      <MenuMobile v-if="isDesktop < 1024" />
-      <MenuDesktop v-else />
+      <MenuDesktop class="sm:hidden md:hidden lg:block" />
+      <MenuMobile class="lg:hidden sm:block md:block" />
       <slot />
       <BaseFooter />
     </div>
@@ -26,20 +26,6 @@ export default {
     MenuMobile,
     MenuDesktop,
     BaseFooter,
-  },
-  data() {
-    return {
-      isDesktop: window.innerWidth,
-    };
-  },
-  created() {
-    window.addEventListener("resize", this.myEventHandler);
-  },
-  methods: {
-    myEventHandler: function() {
-      const xWidth = window.innerWidth;
-      this.isDesktop = xWidth;
-    },
   },
 };
 </script>
