@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-200 min-h-screen bg-center bg-no-repeat bg-cover">
+  <div>
     <div>
       <MenuDesktop class="sm:hidden md:hidden lg:block" />
       <MenuMobile class="lg:hidden sm:block md:block" />

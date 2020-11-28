@@ -4,7 +4,11 @@
     "
   >
     <div class="flex py-4 w-full justify-evenly lg:mb-0 lg:justify-center">
-      <div v-for="social in socialMedias" :key="social.name" class="lg:mx-10">
+      <div
+        v-for="social in socialMedias"
+        :key="social.name"
+        class="transition bg-gray-100 p-1 rounded-md lg:mx-10  lg:hover:bg-gray-600"
+      >
         <a :href="social.link">
           <g-image
             :src="
