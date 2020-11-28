@@ -7,11 +7,11 @@
         <h1 class="text-2xl font-bold m-5 lg:text-4xl">
           Hollywood Undead band members
         </h1>
-        <div class="relative">
-          <ImagesCarousel class="absolute sm:z-0" />
+        <div>
+          <ImagesCarousel />
         </div>
-        <article class="my-4 text-lg lg:text-xl xl:text-2xl">
-          <ul>
+        <article class="w-3/4 m-auto my-4 text-lg lg:text-xl xl:text-2xl">
+          <ul class="w-1/2 m-auto">
             <li
               v-for="member in bandMembers"
               :key="member.pseudonim"
