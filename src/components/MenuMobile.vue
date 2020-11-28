@@ -14,7 +14,7 @@
         <NavigationMenu />
         <button
           @click="isMenuOpen = false"
-          class="w-12 h-12 m-4 absolute top-0 right-0"
+          class="w-12 h-12 m-4 absolute top-0 right-0 z-10"
         >
           <g-image src="../../static/assets/cancel.svg" />
         </button>

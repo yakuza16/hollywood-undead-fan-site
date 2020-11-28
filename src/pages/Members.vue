@@ -1,13 +1,15 @@
 <template>
   <Layout>
     <div class="flex flex-col justify-center place-items-center mx-4 mt-4">
-      <ImagesCarousel />
       <section
         class=" mt-5 mb-32 flex flex-col justify-items-center place-content-center text-center"
       >
         <h1 class="text-2xl font-bold m-5 lg:text-4xl">
           Hollywood Undead band members
         </h1>
+        <div class="relative">
+          <ImagesCarousel class="absolute sm:z-0" />
+        </div>
         <article class="my-4 text-lg lg:text-xl xl:text-2xl">
           <ul>
             <li

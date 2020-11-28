@@ -1,19 +1,22 @@
 <template>
-  <div>
-    <ClientOnly>
-      <carousel
-        :autoplay="true"
-        class="flex justify-items-center place-content-center"
-      >
-        <slide v-for="(image, index) in images" :key="index">
-          <g-image
-            :src="require('!!assets-loader!~/assets/members/' + image)"
-            alt="Image of the Hollywood Undead member"
-          />
-        </slide>
-      </carousel>
-    </ClientOnly>
-  </div>
+  <ClientOnly>
+    <carousel
+      :autoplay="true"
+      :perPageCustom="[[320, 1], [1024, 2]]"
+      :paginationPadding="10"
+      :paginationSize="14"
+      paginationActiveColor="#3384ce"
+      paginationColor="#80e5d9"
+      class="flex justify-items-center place-content-center"
+    >
+      <slide v-for="(image, index) in images" :key="index">
+        <g-image
+          :src="require('!!assets-loader!~/assets/members/' + image)"
+          alt="Image of the Hollywood Undead member"
+        />
+      </slide>
+    </carousel>
+  </ClientOnly>
 </template>
 
 <script>
