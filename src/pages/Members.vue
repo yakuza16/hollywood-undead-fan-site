@@ -5,7 +5,10 @@
         class=" mt-5 mb-32 flex flex-col justify-items-center place-content-center text-center"
       >
         <h1 class="text-2xl font-bold m-5 lg:text-4xl">
-          Hollywood Undead band members
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-blue-900"
+            >Hollywood Undead band members</span
+          >
         </h1>
         <div>
           <ImagesCarousel />

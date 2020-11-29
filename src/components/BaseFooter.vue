@@ -7,7 +7,7 @@
       <div
         v-for="social in socialMedias"
         :key="social.name"
-        class="transition bg-gray-100 p-1 rounded-md lg:mx-10  lg:hover:bg-gray-600"
+        class="lg:mx-10 rounded-lg p-1"
       >
         <a :href="social.link">
           <g-image
@@ -15,7 +15,7 @@
               require('!!assets-loader!~/assets/social_icons/' + social.icon)
             "
             :alt="social.name"
-            class="w-10 h-10"
+            class="w-10 h-10 border-2 border-teal-200 transition duration-300 ease-in-out bg-transparent rounded-sm hover:bg-teal-400 hover:rounded-lg "
           />
         </a>
       </div>
