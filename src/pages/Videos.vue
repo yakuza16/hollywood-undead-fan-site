@@ -18,7 +18,7 @@
               </p>
               <div class="w-full h-56 m-auto px-3 lg:h-screen py-10">
                 <iframe
-                  class="w-full h-full"
+                  class="w-full h-full rounded-3xl border-4 border-teal-400"
                   :src="video.youtubeURL"
                   allowfullscreen="true"
                 ></iframe>

@@ -15,7 +15,7 @@
             <li
               v-for="album in albums"
               :key="album.number"
-              class="my-5 border-b-4 py-3
+              class="my-5 border-b-4 py-3 rounded-xl
               transition duration-500 ease-in-out hover:border-gray-900 border-opacity-50
               lg:hover:bg-blue-300 "
             >
