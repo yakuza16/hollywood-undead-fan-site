@@ -13,7 +13,7 @@
           class="absolute left-0 h-1 w-0 border-1 rounded-3xl bg-gradient-to-r from-teal-400 to-blue-600 ownNav__span"
         ></span>
       </li>
-      <DarkMode class="ml-20"></DarkMode>
+      <DarkMode class="lg:ml-20"></DarkMode>
     </ul>
   </nav>
 </template>
@@ -60,7 +60,7 @@ export default {
 }
 
 .theme-dark {
-  background: rgba(0, 0, 0, 0.863);
+  background: rgba(0, 0, 0, 0.952);
   color: white;
 }
 </style>

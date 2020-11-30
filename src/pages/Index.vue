@@ -7,12 +7,12 @@
         <g-image
           alt="Hollywood Undead"
           src="../../static/assets/hollywood-undead-sign.png"
-          class="m-16 px-8 w-full transition duration-300 ease-in-out opacity-90 hover:opacity-50 lg:w-1/3"
+          class="m-16 px-8 w-full lg:w-1/3 ownImg"
         />
         <g-image
           alt="Dove and grenade"
           src="../../static/assets/dove-and-grenade.png"
-          class="mx-16 w-full transition duration-300 ease-in-out opacity-90 hover:opacity-50 lg:w-1/6 lg:m-auto"
+          class="mx-16 w-full lg:w-1/6 lg:m-auto ownImg"
         />
       </section>
       <article class="flex justify-center text-center mx-5 lg:w-3/4 mb-4">
@@ -58,4 +58,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.ownImg {
+  transition: 0.5s ease-in-out;
+}
+
+.ownImg:hover {
+  filter: hue-rotate(360deg);
+}
+</style>
