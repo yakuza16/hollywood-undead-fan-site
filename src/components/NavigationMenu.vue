@@ -13,7 +13,9 @@
           class="absolute left-0 h-1 w-0 border-1 rounded-3xl bg-gradient-to-r from-teal-400 to-blue-600 ownNav__span"
         ></span>
       </li>
-      <DarkMode class="lg:ml-20"></DarkMode>
+      <ClientOnly>
+        <DarkMode class="lg:ml-20"></DarkMode>
+      </ClientOnly>
     </ul>
   </nav>
 </template>
