@@ -18,7 +18,7 @@
             <li
               v-for="member in bandMembers"
               :key="member.pseudonim"
-              class="my-5 border-b-4 py-3 rounded-xl
+              class="my-5 border-b-4 py-6 rounded-xl
                 transition duration-500 ease-in-out hover:border-gray-900 border-opacity-50
               lg:hover:bg-blue-300 "
             >
@@ -26,15 +26,18 @@
                 Stage name: <strong>{{ member.pseudonim }}</strong>
               </p>
               <p class="my-3">Real name: {{ member.realName }}</p>
-              <p class="my-3">Age: {{ member.age }}</p>
-              <div class="flex justify-center my-5">
+              <p class="my-6">Age: {{ member.age }}</p>
+              <div
+                @mouseenter="member.maskImage = member.smallImg"
+                class="flex justify-center my-5"
+              >
                 <g-image
                   :src="
                     require('!!assets-loader!~/assets/masks/' +
                       member.maskImage)
                   "
                   :alt="member.pseudonim"
-                  class="my-4 rounded-full border-gray-900 border-4 border-opacity-75"
+                  class="my-8 rounded-full"
                 />
               </div>
             </li>
@@ -62,30 +65,35 @@ export default {
           maskImage: "JohhnyMask.jpg",
           realName: "George Arthur Ragan",
           age: this.calculateAge(1981),
+          smallImg: "smallJohnny.png",
         },
         {
           pseudonim: "Charlie Scene",
           maskImage: "charlieMask.jpg",
           realName: "Jordon Kristopher Terrell",
           age: this.calculateAge(1985),
+          smallImg: "smallCharlie.png",
         },
         {
           pseudonim: "J-Dog",
           maskImage: "JdogMask.jpg",
           realName: "Jorel Decker",
           age: this.calculateAge(1984),
+          smallImg: "smallJDog.png",
         },
         {
           pseudonim: "Funny Man",
           maskImage: "funnyMask.jpg",
           realName: "Dylan Alvarez",
           age: this.calculateAge(1986),
+          smallImg: "smallFunny.png",
         },
         {
           pseudonim: "Danny",
           maskImage: "DannyMask.jpg",
           realName: "Daniel Rose Murillo",
           age: this.calculateAge(1982),
+          smallImg: "smallDanny.png",
         },
       ],
     };
