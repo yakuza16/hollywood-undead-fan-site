@@ -27,17 +27,16 @@
               </p>
               <p class="my-3">Real name: {{ member.realName }}</p>
               <p class="my-6">Age: {{ member.age }}</p>
-              <div
-                @mouseenter="member.maskImage = member.smallImg"
-                class="flex justify-center my-5"
-              >
+              <div class="flex justify-center my-5">
                 <g-image
+                  @mouseover="member.index++"
+                  @mouseleave="member.index--"
                   :src="
                     require('!!assets-loader!~/assets/masks/' +
-                      member.maskImage)
+                      member.images[member.index])
                   "
                   :alt="member.pseudonim"
-                  class="my-8 rounded-full"
+                  class=" rounded-full cursor-pointer w-32 h-32 ownImg"
                 />
               </div>
             </li>
@@ -62,38 +61,38 @@ export default {
       bandMembers: [
         {
           pseudonim: "Johnny 3 Tears",
-          maskImage: "JohhnyMask.jpg",
           realName: "George Arthur Ragan",
           age: this.calculateAge(1981),
-          smallImg: "smallJohnny.png",
+          images: ["JohhnyMask.jpg", "smallJohnny.png"],
+          index: 0,
         },
         {
           pseudonim: "Charlie Scene",
-          maskImage: "charlieMask.jpg",
           realName: "Jordon Kristopher Terrell",
           age: this.calculateAge(1985),
-          smallImg: "smallCharlie.png",
+          images: ["charlieMask.jpg", "smallCharlie.png"],
+          index: 0,
         },
         {
           pseudonim: "J-Dog",
-          maskImage: "JdogMask.jpg",
           realName: "Jorel Decker",
           age: this.calculateAge(1984),
-          smallImg: "smallJDog.png",
+          images: ["JdogMask.jpg", "smallJDog.png"],
+          index: 0,
         },
         {
           pseudonim: "Funny Man",
-          maskImage: "funnyMask.jpg",
           realName: "Dylan Alvarez",
           age: this.calculateAge(1986),
-          smallImg: "smallFunny.png",
+          images: ["funnyMask.jpg", "smallFunny.png"],
+          index: 0,
         },
         {
           pseudonim: "Danny",
-          maskImage: "DannyMask.jpg",
           realName: "Daniel Rose Murillo",
           age: this.calculateAge(1982),
-          smallImg: "smallDanny.png",
+          images: ["DannyMask.jpg", "smallDanny.png"],
+          index: 0,
         },
       ],
     };
@@ -106,3 +105,13 @@ export default {
   },
 };
 </script>
+
+<style>
+.ownImg {
+  transition: filter 1s ease-in-out;
+}
+
+.ownImg:hover {
+  filter: brightness(1.3);
+}
+</style>
