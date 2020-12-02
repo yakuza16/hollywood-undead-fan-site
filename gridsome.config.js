@@ -16,5 +16,13 @@ module.exports = {
         shouldTimeTravel: true,
       },
     },
+    {
+      use: "gridsome-source-google-sheets",
+      options: {
+        sheetId: "18akmnYhxbIb5Ss6Dx6g8qIDUUMEzNWWUnpp1fA46i5M",
+        apiKey: "AIzaSyCmzLPJGVlgOt2-tPkCzeD3eaHWc8HTAd8",
+        // type: 'TYPE_NAME', //Optional - default is googleSheet. Used for graphql queries.
+      },
+    },
   ],
 };
