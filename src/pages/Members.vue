@@ -23,7 +23,10 @@
               lg:hover:bg-blue-300 "
             >
               <p class="my-3">
-                Stage name: <strong>{{ member.pseudonim }}</strong>
+                Stage name:
+                <strong>
+                  <g-link :to="member.page">{{ member.pseudonim }}</g-link>
+                </strong>
               </p>
               <p class="my-3">Real name: {{ member.realName }}</p>
               <p class="my-6">Age: {{ member.age }}</p>
@@ -65,6 +68,7 @@ export default {
           age: this.calculateAge(1981),
           images: ["JohhnyMask.jpg", "smallJohnny.png"],
           index: 0,
+          page: "/members/johnny-three-tears/",
         },
         {
           pseudonim: "Charlie Scene",
@@ -72,6 +76,7 @@ export default {
           age: this.calculateAge(1985),
           images: ["charlieMask.jpg", "smallCharlie.png"],
           index: 0,
+          page: "/members/charlie-scene/",
         },
         {
           pseudonim: "J-Dog",
@@ -79,6 +84,7 @@ export default {
           age: this.calculateAge(1984),
           images: ["JdogMask.jpg", "smallJDog.png"],
           index: 0,
+          page: "/members/j-dog/",
         },
         {
           pseudonim: "Funny Man",
@@ -86,6 +92,7 @@ export default {
           age: this.calculateAge(1986),
           images: ["funnyMask.jpg", "smallFunny.png"],
           index: 0,
+          page: "/members/funny-man/",
         },
         {
           pseudonim: "Danny",
@@ -93,6 +100,7 @@ export default {
           age: this.calculateAge(1982),
           images: ["DannyMask.jpg", "smallDanny.png"],
           index: 0,
+          page: "/members/danny/",
         },
       ],
     };
