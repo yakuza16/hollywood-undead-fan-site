@@ -1,8 +1,17 @@
 <template>
   <nav>
-    <ul>
-      <li v-for="(page, index) in pages" :key="index">
+    <ul
+      class="lg:ml-12 lg:mt-12 border-2 text-lg font-bold border-teal-500 p-6 rounded-md hover:bg-teal-400 hover:text-white"
+    >
+      <li
+        v-for="(page, index) in pages"
+        :key="index"
+        class="my-2 relative ownNav"
+      >
         <g-link :to="page.page">{{ page.name }}</g-link>
+        <span
+          class="absolute left-0 h-1 w-0 border-1 rounded-3xl bg-gradient-to-r from-teal-400 to-blue-600 ownNav__span"
+        ></span>
       </li>
     </ul>
   </nav>
@@ -24,4 +33,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.ownNav__span {
+  transition: width 0.3s;
+  bottom: -8px;
+}
+
+.ownNav:hover .ownNav__span {
+  width: 80%;
+}
+</style>

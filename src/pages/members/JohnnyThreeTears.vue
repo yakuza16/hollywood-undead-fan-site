@@ -1,12 +1,14 @@
 <template>
   <Layout>
     <div
-      class="flex flex-col justify-center place-items-center mx-4 mt-4 min-h-screen"
+      class="flex flex-col justify-center place-items-center mx-4 mt-4 min-h-screen lg:relative"
     >
       <header class="mb-4">
         <section class="flex flex-col place-items-center text-center">
-          <div class="w-full flex justify-center lg:justify-start">
-            <NavigationMembers class="my-2 ml-24 " />
+          <div
+            class="w-full flex justify-center lg:justify-start lg:absolute lg:top-0 lg:left-0"
+          >
+            <NavigationMembers class="my-2 " />
           </div>
           <h1 class="text-2xl font-bold">Johnny 3 Tears</h1>
           <div
@@ -27,7 +29,7 @@
                 Stage Name: <strong>Johnny 3 Tears J3T The Server</strong>
               </li>
               <li class="w-full text-left">
-                Born: <date><strong>June 24, 1981</strong> </date>
+                Born: <em><strong>June 24, 1981</strong> </em>
               </li>
               <li class="w-full text-left">
                 Family: Ava Ragan (daughter) Chloe Ragan (daughter) Asia Ragan
@@ -122,7 +124,12 @@
 </template>
 
 <script>
-export default {};
+import NavigationMembers from "../../components/NavigationMembers";
+export default {
+  components: {
+    NavigationMembers,
+  },
+};
 </script>
 
 <style>

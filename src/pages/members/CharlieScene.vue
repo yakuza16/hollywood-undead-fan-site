@@ -1,12 +1,14 @@
 <template>
   <Layout>
     <div
-      class="flex flex-col justify-center place-items-center mx-4 mt-4 min-h-screen"
+      class="flex flex-col justify-center place-items-center mx-4 mt-4 min-h-screen lg:relative"
     >
       <header class="mb-4">
         <section class="flex flex-col place-items-center text-center">
-          <div class="w-full flex justify-center lg:justify-start">
-            <NavigationMembers class="my-2 ml-24 " />
+          <div
+            class="w-full flex justify-center lg:justify-start lg:absolute lg:top-0 lg:left-0"
+          >
+            <NavigationMembers class="my-2 " />
           </div>
           <h1 class="text-2xl font-bold">Charlie Scene</h1>
           <div
@@ -28,7 +30,7 @@
                 <strong>Charlie Scene Charles P. Scene Charlie 40 Hands</strong>
               </li>
               <li class="w-full text-left">
-                Born: <date><strong>Born September 3, 1985</strong> </date>
+                Born: <em><strong>Born September 3, 1985</strong> </em>
               </li>
               <li class="w-full text-left">
                 Family: Randi Terrell (wife) Jack Charles Terrell (son) James
