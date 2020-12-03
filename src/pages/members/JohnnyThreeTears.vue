@@ -15,7 +15,7 @@
               ></g-image>
             </div>
             <ul
-              class="flex flex-col m-4 justify-center place-items-center text-xs lg:w-1/3 lg:pl-6"
+              class="flex flex-col m-4 justify-center place-items-center text-xs lg:w-1/3 lg:pl-6 lg:text-sm"
             >
               <li class="w-full text-left">
                 Real Name: <strong>George Arthur Ragan</strong>
@@ -48,29 +48,30 @@
       >
         <h2 class="text-xl font-bold">Biography</h2>
         <article class="mb-4 mx-4 p-2">
-          Personal Background George Arthur Ragan was born in Los Angeles,
-          California on June 24, 1981. He first met future band mate J-Dog when
-          he was very young, but they didn't like each other when they first
-          met. However, years later, they ended up in the same band. He used to
-          date a girl named Carly, along with a few others before meeting a
-          woman named Asia. They have a daughter together, named Ava Ragan and
-          are married since January 19, 2018. Asia recently announced on her
-          Instagram that they are going to have another baby in November. He
-          lived in California almost all his life, most recently in Huntington
-          Beach, before ultimately moving to Nashville, Tennessee with his
-          family. Band Position He is typically a vocalist doing raps in more
-          serious, sad and/or angry songs. Despite this, he has rapped in less
-          mature songs like No. 5 and One More Bottle. In I'll Be There and
-          Sing, he does clean vocals for the first time (for the band). His
-          favorite song off of American Tragedy is S.C.A.V.A... He posted on
-          Twitter in January of 2015 that his favorite Hollywood Undead song is
-          Outside. He also claims I'll Be There to be one of his favorites from
-          Day of the Dead along with Does Everybody in the World Have to Die.
-          During an interview with Impericon in 2017, he listed I Don't Wanna
-          Die and Young as some of his favorite songs. His favorite songs from V
-          are Your Life, Renegade and Pray (Put 'Em in the Dirt).
+          <h3 class="font-bold text-center my-2">Personal Background</h3>
+          George Arthur Ragan was born in Los Angeles, California on June 24,
+          1981. He first met future band mate J-Dog when he was very young, but
+          they didn't like each other when they first met. However, years later,
+          they ended up in the same band. He used to date a girl named Carly,
+          along with a few others before meeting a woman named Asia. They have a
+          daughter together, named Ava Ragan and are married since January 19,
+          2018. Asia recently announced on her Instagram that they are going to
+          have another baby in November. He lived in California almost all his
+          life, most recently in Huntington Beach, before ultimately moving to
+          Nashville, Tennessee with his family. Band Position He is typically a
+          vocalist doing raps in more serious, sad and/or angry songs. Despite
+          this, he has rapped in less mature songs like No. 5 and One More
+          Bottle. In I'll Be There and Sing, he does clean vocals for the first
+          time (for the band). His favorite song off of American Tragedy is
+          S.C.A.V.A... He posted on Twitter in January of 2015 that his favorite
+          Hollywood Undead song is Outside. He also claims I'll Be There to be
+          one of his favorites from Day of the Dead along with Does Everybody in
+          the World Have to Die. During an interview with Impericon in 2017, he
+          listed I Don't Wanna Die and Young as some of his favorite songs. His
+          favorite songs from V are Your Life, Renegade and Pray (Put 'Em in the
+          Dirt).
         </article>
-        <h3 class="text-xl font-bold">Masks</h3>
+        <h4 class="text-xl font-bold">Masks</h4>
         <article class="mb-4 mx-4 p-2">
           Hollywood Undead Johnny's first mask in 2006 was a white goalie mask
           with huge, symmetrical black splatters dropping from its eyes. The
