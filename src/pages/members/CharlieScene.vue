@@ -1,15 +1,11 @@
 <template>
   <Layout>
     <div
-      class="flex flex-col justify-center place-items-center mx-4 mt-4 min-h-screen lg:relative"
+      class="flex flex-col justify-center place-items-center mx-4 mt-4 min-h-screen"
     >
-      <header class="mb-4">
+      <header class="mb-4 w-full">
         <section class="flex flex-col place-items-center text-center">
-          <div
-            class="w-full flex justify-center lg:justify-start lg:absolute lg:top-0 lg:left-0"
-          >
-            <NavigationMembers class="my-2 " />
-          </div>
+          <NavigationMembers class="my-2 lg:mb-6 " />
           <h1 class="text-2xl font-bold">Charlie Scene</h1>
           <div
             class="flex flex-col w-3/4 md:w-1/2 lg:flex-row lg:justify-center lg:w-full"
