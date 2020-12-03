@@ -46,14 +46,19 @@
           4 2020.
         </p>
       </article>
+      <ButtonScrollTop class="mb-32 lg:hidden" />
     </div>
   </Layout>
 </template>
 
 <script>
+import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
   metaInfo: {
     title: "Hollywood Undead Fan Site Home",
+  },
+  components: {
+    ButtonScrollTop,
   },
 };
 </script>

@@ -8,7 +8,9 @@
         :key="page.name"
         class="my-4 mx-4 relative ownNav"
       >
-        <g-link :to="page.path" class="nav__link">{{ page.name }}</g-link>
+        <g-link :to="page.path" class="nav__link font-bold">{{
+          page.name
+        }}</g-link>
         <span
           class="absolute left-0 h-1 w-0 border-1 rounded-3xl bg-gradient-to-r from-teal-400 to-blue-600 ownNav__span"
         ></span>

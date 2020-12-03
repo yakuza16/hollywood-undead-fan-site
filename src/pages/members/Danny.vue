@@ -85,6 +85,7 @@
           like graffiti. Danny has a golden mask with a black cross, a silver
           mask with a blue cross, and a red mask with a white cross.
         </article>
+        <ButtonScrollTop />
       </main>
     </div>
   </Layout>
@@ -92,9 +93,11 @@
 
 <script>
 import NavigationMembers from "../../components/NavigationMembers";
+import ButtonScrollTop from "../../components/ButtonScrollTop";
 export default {
   components: {
     NavigationMembers,
+    ButtonScrollTop,
   },
 };
 </script>

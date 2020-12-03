@@ -46,6 +46,7 @@
             </li>
           </ul>
         </article>
+        <ButtonScrollTop />
       </section>
     </div>
   </Layout>
@@ -53,9 +54,11 @@
 
 <script>
 import ImagesCarousel from "../components/ImagesCarousel";
+import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
   components: {
     ImagesCarousel,
+    ButtonScrollTop,
   },
   metaInfo: {
     title: "Hollywood Undead Band Members",

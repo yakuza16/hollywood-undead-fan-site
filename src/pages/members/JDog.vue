@@ -144,6 +144,7 @@
           a silver mask with blue blood and a blue dollar sign, and a black mask
           with gold blood and a gold dollar sign.
         </article>
+        <ButtonScrollTop />
       </main>
     </div>
   </Layout>
@@ -151,9 +152,11 @@
 
 <script>
 import NavigationMembers from "../../components/NavigationMembers";
+import ButtonScrollTop from "../../components/ButtonScrollTop";
 export default {
   components: {
     NavigationMembers,
+    ButtonScrollTop,
   },
 };
 </script>

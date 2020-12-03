@@ -1,7 +1,7 @@
 <template>
-  <nav>
+  <nav class="mt-0">
     <ul
-      class="lg:ml-12 lg:w-full border-2 text-lg font-bold border-teal-500 p-6 rounded-md hover:bg-teal-400 hover:text-white"
+      class="lg:ml-12 lg:w-full border-2 text-lg font-bold border-teal-500 p-6 rounded-md transition duration-500 ease-in-out bg-teal-400 hover:bg-blue-400 hover:text-white"
     >
       <li
         v-for="(page, index) in pages"

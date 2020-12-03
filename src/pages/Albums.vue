@@ -49,13 +49,18 @@
             </li>
           </ul>
         </article>
+        <ButtonScrollTop />
       </section>
     </div>
   </Layout>
 </template>
 
 <script>
+import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
+  components: {
+    ButtonScrollTop,
+  },
   data() {
     return {
       albums: [

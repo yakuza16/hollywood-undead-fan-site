@@ -94,6 +94,7 @@
           has a black bandana with golden letters, a blue bandana with silver
           letters, and a red bandana with white letters.
         </article>
+        <ButtonScrollTop />
       </main>
     </div>
   </Layout>
@@ -101,9 +102,12 @@
 
 <script>
 import NavigationMembers from "../../components/NavigationMembers";
+import ButtonScrollTop from "../../components/ButtonScrollTop";
+
 export default {
   components: {
     NavigationMembers,
+    ButtonScrollTop,
   },
 };
 </script>

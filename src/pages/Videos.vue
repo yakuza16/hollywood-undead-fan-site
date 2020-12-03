@@ -30,6 +30,7 @@
             </li>
           </ul>
         </article>
+        <ButtonScrollTop />
       </section>
     </div>
   </Layout>
@@ -49,9 +50,13 @@ allGoogleSheet {
 </page-query>
 
 <script>
+import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
   metaInfo: {
     title: "Hollywood Undead Music Videos",
+  },
+  components: {
+    ButtonScrollTop,
   },
 };
 </script>

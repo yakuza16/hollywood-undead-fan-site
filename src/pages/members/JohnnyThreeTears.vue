@@ -114,6 +114,7 @@
           silver mask with blue threes, a golden mask with black threes, and a
           red mask with white threes.
         </article>
+        <ButtonScrollTop />
       </main>
     </div>
   </Layout>
@@ -121,9 +122,11 @@
 
 <script>
 import NavigationMembers from "../../components/NavigationMembers";
+import ButtonScrollTop from "../../components/ButtonScrollTop";
 export default {
   components: {
     NavigationMembers,
+    ButtonScrollTop,
   },
 };
 </script>
