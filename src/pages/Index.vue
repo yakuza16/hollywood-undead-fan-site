@@ -15,6 +15,14 @@
           class="mx-16 w-full lg:w-1/6 lg:m-auto ownImg"
         />
       </section>
+      <aside class="my-2 w-full h-64 m-auto lg:w-1/3">
+        <iframe
+          src="https://open.spotify.com/embed/artist/0CEFCo8288kQU7mJi25s6E"
+          frameborder="0"
+          allowtransparency="true"
+          class="w-full h-full"
+        ></iframe>
+      </aside>
       <article class="flex justify-center text-center mx-5 lg:w-3/4 mb-4">
         <p class="mb-24 mt-8 md:text-lg lg:text-xl">
           <strong><em>Hollywood Undead</em></strong> is an American rap rock
