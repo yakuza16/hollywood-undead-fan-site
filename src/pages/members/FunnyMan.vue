@@ -5,6 +5,9 @@
     >
       <header class="mb-4">
         <section class="flex flex-col place-items-center text-center">
+          <div class="w-full flex justify-center lg:justify-start">
+            <NavigationMembers class="my-2 ml-24 " />
+          </div>
           <h1 class="text-2xl font-bold">Funny Man</h1>
           <div
             class="flex flex-col w-3/4 md:w-1/2 lg:flex-row lg:justify-center lg:w-full"

@@ -31,16 +31,17 @@
               <p class="my-3">Real name: {{ member.realName }}</p>
               <p class="my-6">Age: {{ member.age }}</p>
               <div class="flex justify-center my-5">
-                <g-image
-                  @mouseover="member.index++"
-                  @mouseleave="member.index--"
-                  :src="
-                    require('!!assets-loader!~/assets/masks/' +
-                      member.images[member.index])
-                  "
-                  :alt="member.pseudonim"
-                  class=" rounded-full cursor-pointer w-32 h-32 ownImg"
-                />
+                <g-link :to="member.page"
+                  ><g-image
+                    @mouseover="member.index++"
+                    @mouseleave="member.index--"
+                    :src="
+                      require('!!assets-loader!~/assets/masks/' +
+                        member.images[member.index])
+                    "
+                    :alt="member.pseudonim"
+                    class=" rounded-full cursor-pointer w-32 h-32 ownImg"
+                /></g-link>
               </div>
             </li>
           </ul>
