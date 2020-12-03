@@ -3,34 +3,51 @@
     <div
       class="flex flex-col justify-center place-items-center mx-4 mt-4 min-h-screen"
     >
-      <header>
-        <section>
-          <h1>Johnny 3 Tears</h1>
-          <div>
-            <g-image
-              src="../../../static/assets/Johnny_3_Tears_V.png"
-            ></g-image>
+      <header class="mb-4">
+        <section class="flex flex-col place-items-center text-center">
+          <h1 class="text-2xl font-bold">Johnny 3 Tears</h1>
+          <div
+            class="flex flex-col w-3/4 md:w-1/2 lg:flex-row lg:justify-center lg:w-full"
+          >
+            <div class="flex justify-center mt-4 mb-4">
+              <g-image
+                src="../../../static/assets/Johnny_3_Tears_V.png"
+              ></g-image>
+            </div>
+            <ul
+              class="flex flex-col m-4 justify-center place-items-center text-xs lg:w-1/3 lg:pl-6"
+            >
+              <li class="w-full text-left">
+                Real Name: <strong>George Arthur Ragan</strong>
+              </li>
+              <li class="w-full text-left">
+                Stage Name: <strong>Johnny 3 Tears J3T The Server</strong>
+              </li>
+              <li class="w-full text-left">
+                Born: <date><strong>June 24, 1981</strong> </date>
+              </li>
+              <li class="w-full text-left">
+                Family: Ava Ragan (daughter) Chloe Ragan (daughter) Asia Ragan
+                (wife) Connor Ragan (brother) Molly Ragan (sister) Kevin Ragan
+                (father) Terry Ragan (mother) Laurie Ragan-Anderson (aunt) Jewel
+                Ragan (cousin) Sylvia Ragan (grandmother) George Ragan (great
+                grandfather) Lloyd (grandfather; deceased)
+              </li>
+              <li class="w-full text-left">Joined: <strong>2005</strong></li>
+              <li class="w-full text-left">
+                Position:
+                <strong>vocals, unclean vocals bass guitar (since 2013)</strong>
+              </li>
+              <li class="w-full text-left">Song Count: 84</li>
+            </ul>
           </div>
-          <ul>
-            <li>Real Name George Arthur Ragan</li>
-            <li>Stage Name Johnny 3 Tears J3T The Server</li>
-            <li>Born June 24, 1981 (age 39)</li>
-            <li>
-              Family Ava Ragan (daughter) Chloe Ragan (daughter) Asia Ragan
-              (wife) Connor Ragan (brother) Molly Ragan (sister) Kevin Ragan
-              (father) Terry Ragan (mother) Laurie Ragan-Anderson (aunt) Jewel
-              Ragan (cousin) Sylvia Ragan (grandmother) George Ragan (great
-              grandfather) Lloyd (grandfather; deceased)
-            </li>
-            <li>Joined 2005</li>
-            <li>Position vocals, unclean vocals bass guitar (since 2013)</li>
-            <li>Song Count 84</li>
-          </ul>
         </section>
       </header>
-      <main>
-        <h2>Biography</h2>
-        <article>
+      <main
+        class="mb-24 flex flex-col justify-center place-items-center text-center lg:mx-8 lg:text-left"
+      >
+        <h2 class="text-xl font-bold">Biography</h2>
+        <article class="mb-4 mx-4 p-2">
           Personal Background George Arthur Ragan was born in Los Angeles,
           California on June 24, 1981. He first met future band mate J-Dog when
           he was very young, but they didn't like each other when they first
@@ -53,8 +70,8 @@
           Die and Young as some of his favorite songs. His favorite songs from V
           are Your Life, Renegade and Pray (Put 'Em in the Dirt).
         </article>
-        <h3>Masks</h3>
-        <article>
+        <h3 class="text-xl font-bold">Masks</h3>
+        <article class="mb-4 mx-4 p-2">
           Hollywood Undead Johnny's first mask in 2006 was a white goalie mask
           with huge, symmetrical black splatters dropping from its eyes. The
           splatters were flowing towards to the sides of the mask. The mouth was
