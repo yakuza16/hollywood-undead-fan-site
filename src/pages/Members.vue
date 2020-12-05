@@ -56,12 +56,18 @@
 import ImagesCarousel from "../components/ImagesCarousel";
 import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
+  metaInfo: {
+    title: "Hollywood Undead Members",
+    meta: [
+      {
+        content:
+          "Charlie Scene, J-Dog, Johnny 3 Tears, J3T, Funny Man, Danny, Daniel Rose Murillo, ",
+      },
+    ],
+  },
   components: {
     ImagesCarousel,
     ButtonScrollTop,
-  },
-  metaInfo: {
-    title: "Hollywood Undead Band Members",
   },
   data() {
     return {

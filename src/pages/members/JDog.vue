@@ -154,6 +154,14 @@
 import NavigationMembers from "../../components/NavigationMembers";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
 export default {
+  metaInfo: {
+    title: "J-Dog",
+    meta: [
+      {
+        content: "J-Dog mask, J-Dog biography",
+      },
+    ],
+  },
   components: {
     NavigationMembers,
     ButtonScrollTop,

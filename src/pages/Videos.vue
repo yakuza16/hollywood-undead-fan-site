@@ -53,7 +53,13 @@ allGoogleSheet {
 import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
   metaInfo: {
-    title: "Hollywood Undead Music Videos",
+    title: "Hollywood Undead Music Video",
+    meta: [
+      {
+        content:
+          "Undead, Empire, Heart Of A Champion,We own the night, Day of the dead, California dreaming, Nightmare, Gravity, Hear me now, Your life, Renegade, Young",
+      },
+    ],
   },
   components: {
     ButtonScrollTop,

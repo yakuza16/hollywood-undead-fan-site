@@ -107,6 +107,14 @@
 import NavigationMembers from "../../components/NavigationMembers";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
 export default {
+  metaInfo: {
+    title: "Funny Man",
+    meta: [
+      {
+        content: "Funny Man mask, Dylan Alvarez biography",
+      },
+    ],
+  },
   components: {
     NavigationMembers,
     ButtonScrollTop,

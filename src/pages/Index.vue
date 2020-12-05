@@ -63,7 +63,12 @@
 import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
   metaInfo: {
-    title: "Hollywood Undead Fan Site Home",
+    title: "Hollywood Undead Fan Site",
+    meta: [
+      {
+        content: "Hollywood Undead unofficial site",
+      },
+    ],
   },
   components: {
     ButtonScrollTop,

@@ -95,6 +95,14 @@
 import NavigationMembers from "../../components/NavigationMembers";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
 export default {
+  metaInfo: {
+    title: "Danny Rose Murillo",
+    meta: [
+      {
+        content: "Danny mask, Danny Rose Murillo biography",
+      },
+    ],
+  },
   components: {
     NavigationMembers,
     ButtonScrollTop,

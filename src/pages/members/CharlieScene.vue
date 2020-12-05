@@ -105,6 +105,14 @@ import NavigationMembers from "../../components/NavigationMembers";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
 
 export default {
+  metaInfo: {
+    title: "Charlie Scene",
+    meta: [
+      {
+        content: "Charlie Scene mask, Charlie Scene biography",
+      },
+    ],
+  },
   components: {
     NavigationMembers,
     ButtonScrollTop,

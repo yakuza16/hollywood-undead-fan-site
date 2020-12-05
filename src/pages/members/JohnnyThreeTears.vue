@@ -124,6 +124,14 @@
 import NavigationMembers from "../../components/NavigationMembers";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
 export default {
+  metaInfo: {
+    title: "Johnny 3 Tears",
+    meta: [
+      {
+        content: "J3T, Johnny mask, Johnny Three Tears biography",
+      },
+    ],
+  },
   components: {
     NavigationMembers,
     ButtonScrollTop,

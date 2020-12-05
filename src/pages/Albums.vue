@@ -80,6 +80,15 @@ allAlbums {
 <script>
 import ButtonScrollTop from "../components/ButtonScrollTop";
 export default {
+  metaInfo: {
+    title: "Hollywood Undead Albums",
+    meta: [
+      {
+        content:
+          "Swan Songs, American Tragedy, Day of the dead, Notes from the underground, New Empire vol. 1, New Empire vol. 2",
+      },
+    ],
+  },
   components: {
     ButtonScrollTop,
   },
