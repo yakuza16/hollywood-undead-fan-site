@@ -8,7 +8,9 @@
 export default {
   methods: {
     scrollToTop: () => {
-      window.scrollTo(0, 0);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 400);
     },
   },
 };

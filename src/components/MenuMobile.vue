@@ -4,7 +4,7 @@
       <button
         v-show="!isMenuOpen"
         @click="isMenuOpen = true"
-        class="w-12 h-12 mr-4 mt-4"
+        class="w-12 h-12 mr-4 mt-4 bg-white p-1 rounded-md"
       >
         <g-image src="../../static/assets/menu.svg" />
       </button>
@@ -14,7 +14,7 @@
         <NavigationMenu />
         <button
           @click="isMenuOpen = false"
-          class="w-12 h-12 m-4 absolute top-0 right-0 z-10"
+          class="w-12 h-12 m-4 absolute top-0 right-0 z-10 bg-white p-1 rounded-md"
         >
           <g-image src="../../static/assets/cancel.svg" />
         </button>
