@@ -26,7 +26,7 @@
                 <strong>Charlie Scene Charles P. Scene Charlie 40 Hands</strong>
               </li>
               <li class="w-full text-left">
-                Born: <em><strong>Born September 3, 1985</strong> </em>
+                Born: <em><strong> September 3, 1985</strong> </em>
               </li>
               <li class="w-full text-left">
                 Family: Randi Terrell (wife) Jack Charles Terrell (son) James

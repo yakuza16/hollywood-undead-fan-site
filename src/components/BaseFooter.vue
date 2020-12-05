@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-gray-500 w-full absolute bottom-0 flex justify-center items-center h-auto
+    class="bg-gray-300 w-full absolute bottom-0 flex justify-center items-center h-auto border-t-2 border-teal-800
     "
   >
     <div class="flex py-4 w-full justify-evenly lg:mb-0 lg:justify-center">
@@ -15,7 +15,7 @@
               require('!!assets-loader!~/assets/social_icons/' + social.icon)
             "
             :alt="social.name"
-            class="w-10 h-10 border-2 border-teal-200 transition duration-300 ease-in-out bg-transparent rounded-sm hover:bg-teal-400 hover:rounded-lg "
+            class="w-10 h-10 border-2 border-teal-200 transition duration-300 ease-in-out bg-transparent rounded-md p-1 hover:bg-teal-400 hover:rounded-lg "
           />
         </a>
       </div>
