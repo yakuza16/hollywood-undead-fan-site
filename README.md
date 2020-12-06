@@ -6,11 +6,13 @@
 
 **Gridsome**
 
+
 ![](https://gridsome.org/logos/logo-normal.svg) - a static site generator for Vue.js framework
+
 
 **VUE** and **Tailwind CSS**  
 
-![](https://miro.medium.com/max/2400/1*EoXvrfInMC18-zaYIWkizw.png)
+![](https://miro.medium.com/max/2400/1*3oX_9l-3hTUyKSux_IZpdw.jpeg)
 
  
 ------------
