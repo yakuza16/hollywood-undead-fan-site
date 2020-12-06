@@ -4,7 +4,7 @@
 
 ## Site made in:
 
-**Gridsome** and **GQL
+**Gridsome** and **GQL**
 
 
 ![](https://gridsome.org/logos/logo-normal.svg) - a static site generator for Vue.js framework
