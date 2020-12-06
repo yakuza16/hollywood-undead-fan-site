@@ -1,14 +1,16 @@
-# [Timer](https://vigilant-colden-87f5c6.netlify.app/ "Hollywood Undead")
+# [Hollywood Undead](https://vigilant-colden-87f5c6.netlify.app/ "Hollywood Undead")
 
 ![](https://upload.wikimedia.org/wikipedia/commons/1/1a/Hollywood_undead_Logo.svg)
 
-## Application made in:
+## Site made in:
 
-**HTML**   ![](https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/96-html5-48.png)   **CSS**   ![](https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful-1/2048/5351_-_CSS3-64.png)   **JavaScript**   ![](https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-64.png)   **SVG Icons**   ![](https://cdn3.iconfinder.com/data/icons/cad-database-presentation-spreadsheet-vector-fil-2/512/28-48.png)
+**Gridsome**  ![](https://gridsome.org/logos/only-logo.svg) - a static site generator for:   
+**VUE**   ![](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/367_Vuejs_logo-512.png) 
+**Tailwind CSS**   ![](https://miro.medium.com/max/632/1*5QD8DKhOjRe-gcYjozlLNQ.png)
 
 ------------
 
-Timer that allows you to choose how many hours, minutes and seconds to count. After the time has counted down, an alarm sounds that must be turned off. After that, you can set the time again.
+
 
 
 
