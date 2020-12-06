@@ -4,10 +4,12 @@
 
 ## Site made in:
 
-**Gridsome**
+**Gridsome** and **GQL
 
 
 ![](https://gridsome.org/logos/logo-normal.svg) - a static site generator for Vue.js framework
+
+![](https://davidwalsh.name/demo/graphql-intro/graphql.png)
 
 
 **VUE** and **Tailwind CSS**  
@@ -17,38 +19,21 @@
  
 ------------
 
+**This is a fanpage about US California rapcore band  - Hollywood Undead.** 
+
+I used the Gridsome static page generator for Vue.js framework to do this project. I also used the tailwind.css library for styling. To display data in several pages I used GQL which is integrated with gridsome. Videos site is using GQL also but it downloads data from google stylesheets.
+I used also external libraries - vue.carousel for a slider on members page, and vue.dark-mode-switcher - on the entire site.
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Below are Gridsome infos:
+____________________________________________________________________________________________
 
 # Default starter for Gridsome
 
-This is the project you get when you run `gridsome create new-project`.
+Fresh project - run `gridsome create new-project`.
 
 ### 1. Install Gridsome CLI tool if you don't have
 
