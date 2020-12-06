@@ -5,7 +5,7 @@
   >
     <div class="flex py-4 w-full justify-evenly lg:mb-0 lg:justify-center">
       <div
-        v-for="social in socialMedias"
+        v-for="social in socials"
         :key="social.name"
         class="lg:mx-10 rounded-lg p-1"
       >
@@ -25,31 +25,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      socialMedias: [
-        {
-          name: "facebook",
-          link: "https://www.facebook.com/hollywoodundead",
-          icon: "facebook.svg",
-        },
-        {
-          name: "instagram",
-          link: "https://www.instagram.com/hollywoodundead",
-          icon: "instagram.svg",
-        },
-        {
-          name: "spotify",
-          link: "https://open.spotify.com/artist/0CEFCo8288kQU7mJi25s6E",
-          icon: "spotify.svg",
-        },
-        {
-          name: "youtube",
-          link: "https://www.youtube.com/user/HUofficial",
-          icon: "youtube.svg",
-        },
-      ],
-    };
+  props: {
+    socials: {
+      type: Array,
+    },
   },
 };
 </script>
