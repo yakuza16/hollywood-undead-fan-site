@@ -4,7 +4,7 @@
       <button
         v-show="!isMenuOpen"
         @click="isMenuOpen = true"
-        class="w-12 h-12 mr-4 mt-4 bg-white p-1 rounded-md"
+        class="w-12 h-12 mr-4 mt-4 bg-white p-1 rounded-md border"
       >
         <g-image src="../../static/assets/menu.svg" />
       </button>

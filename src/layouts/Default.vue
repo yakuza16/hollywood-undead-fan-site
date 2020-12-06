@@ -4,16 +4,24 @@
       <MenuDesktop class="sm:hidden md:hidden lg:block" />
       <MenuMobile class="lg:hidden sm:block md:block" />
       <slot />
-      <BaseFooter :socials="socialMedias" />
+      <BaseFooter :socials="$static.allSocials.edges[0].node.socialMedias" />
     </div>
   </div>
 </template>
 
 <static-query>
 query {
-  metadata {
-    siteName
+allSocials {
+  edges {
+    node {
+      socialMedias {
+        name
+        link
+        icon
+      }
+    }
   }
+}
 }
 </static-query>
 
@@ -26,32 +34,6 @@ export default {
     MenuMobile,
     MenuDesktop,
     BaseFooter,
-  },
-  data() {
-    return {
-      socialMedias: [
-        {
-          name: "facebook",
-          link: "https://www.facebook.com/hollywoodundead",
-          icon: "facebook.svg",
-        },
-        {
-          name: "instagram",
-          link: "https://www.instagram.com/hollywoodundead",
-          icon: "instagram.svg",
-        },
-        {
-          name: "spotify",
-          link: "https://open.spotify.com/artist/0CEFCo8288kQU7mJi25s6E",
-          icon: "spotify.svg",
-        },
-        {
-          name: "youtube",
-          link: "https://www.youtube.com/user/HUofficial",
-          icon: "youtube.svg",
-        },
-      ],
-    };
   },
 };
 </script>

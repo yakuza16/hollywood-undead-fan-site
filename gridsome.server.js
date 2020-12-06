@@ -9,6 +9,32 @@ module.exports = function(api) {
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
     const musicData = addCollection("Albums");
+    const socialMediaData = addCollection("Socials");
+
+    socialMediaData.addNode({
+      socialMedias: [
+        {
+          name: "facebook",
+          link: "https://www.facebook.com/hollywoodundead",
+          icon: "facebook.svg",
+        },
+        {
+          name: "instagram",
+          link: "https://www.instagram.com/hollywoodundead",
+          icon: "instagram.svg",
+        },
+        {
+          name: "spotify",
+          link: "https://open.spotify.com/artist/0CEFCo8288kQU7mJi25s6E",
+          icon: "spotify.svg",
+        },
+        {
+          name: "youtube",
+          link: "https://www.youtube.com/user/HUofficial",
+          icon: "youtube.svg",
+        },
+      ],
+    });
 
     musicData.addNode({
       albums: [
