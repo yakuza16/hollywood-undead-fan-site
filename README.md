@@ -5,7 +5,7 @@
 ## Site made in:
 
 **Gridsome**  ![](https://gridsome.org/logos/only-logo.svg) - a static site generator for:   
-**VUE**   ![](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/367_Vuejs_logo-512.png) 
+**VUE**   ![](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/367_Vuejs_logo-256.png) 
 **Tailwind CSS**   ![](https://miro.medium.com/max/632/1*5QD8DKhOjRe-gcYjozlLNQ.png)
 
 ------------
