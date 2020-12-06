@@ -6,9 +6,9 @@
 
 **Gridsome**  ![](https://simpleicons.org/icons/gridsome.svg) - a static site generator for:
 
-**VUE**   ![](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/367_Vuejs_logo-256.png)
+**VUE**   ![](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/367_Vuejs_logo-256.png =250x)
 
-**Tailwind CSS**   ![](https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png)
+**Tailwind CSS**   ![](https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png =250x)
 
 ------------
 
